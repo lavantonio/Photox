@@ -1,0 +1,264 @@
+@import url('https://fonts.googleapis.com/css?family=Nunito:300,400,800,900&display=swap');
+:root {
+    --orange: #e24e2a;
+    --brown: #383838; /* rgb(56, 56, 56) */
+    --green: #538d6a;
+    --gray: #ececec;
+    --text: #555555;
+    --white: #fff;
+}
+body {
+    font-family: 'Nunito', sans-serif;
+    font-size: 16px;
+    font-weight: 300;
+    line-height: 1.6;
+}
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+.container {
+    width: 80%;
+    margin: auto;
+}
+.container::after {
+    display: block;
+    content: "";
+    clear: both;
+  }
+/*****************
+header
+*****************/
+
+  header {
+    padding: 30px 30px;
+  }
+
+  .logo a {
+    font-size: 1.4rem;
+    float: left;
+    display: inline;
+    font-weight: bold;
+    text-decoration: none;
+    color: var(--text);
+  }
+  .logo p {
+    float: left;
+    display: inline;
+    line-height: 35px;
+    color: var(--text);
+  }
+  .menu {
+    float: right;
+  }
+  nav ul li {
+  	float: left;
+  	text-align: centar;
+    list-style: none;
+    margin: 10px 0 0 0;
+  }
+  nav ul li a {
+  	text-decoration: none;
+  	line-height: 25px;
+    color: var(--text);
+    border:1px solid var(--gray);
+    margin: 10px 5px 0 5px;
+    padding: 0 3px;
+  }
+  nav ul li a:hover {
+    background-color: var(--orange);
+    padding: 0 3px;
+  }
+  /*****************
+  one
+  *****************/
+  .one{
+    background-image: linear-gradient(rgba(123, 117, 117, 0.8), rgba(33, 26, 26, 0)), url(img/header.jpg);
+    height: 500px;
+    width: 80%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+    background-position: 50% 50%;
+    background-size: cover;
+  }
+  /*****************
+  two
+  *****************/
+  .two{
+    padding: 30px 150px;
+    background-color: var(--orange);
+    color: var(--white);
+    margin: 0 auto;
+    width: 80%;
+    text-align: center;
+  }
+
+  /*****************
+  three
+  *****************/
+  .three{
+    background-color: var(--brown);
+    color: var(--text);
+    margin: 0 auto;
+    text-align: center;
+    width: 80%;
+  }
+  .con25{
+    float: left;
+    width: 25%;
+    padding: 0 30px;
+  }
+
+  .three .container{
+    width: 100%;
+    padding: 50px 20px;
+  }
+
+  .con25 i{
+    font-size: 1.6rem;
+    color: var(--white);
+    border-radius: 50%;
+    background-color: var(--orange);
+    display: inline;
+    padding: 20px;
+  }
+  h3{
+    padding: 30px 0 15px 0;
+    color: var(--white);
+  }
+  hr{
+    background: var(--text);
+    border: none;
+    height: 0.5px;
+    margin-bottom: 15px;
+  }
+  /*****************
+  four
+  *****************/
+  .four{
+    margin: auto;
+    padding: 40px 0;
+    width: 80%;
+    text-align: center;
+  }
+  .four p, .four h2{
+    padding: 10px 0;
+  }
+  button{
+    margin: 10px 0;
+  }
+  button {
+      background: var(--green);
+      padding: 15px 30px;
+      color: var(--white);
+      font-size: 1.1rem;
+      border: none;
+      margin: 10px 0;
+      border:1px solid var(--white);
+  }
+  button:hover {
+      background: var(--gray);
+      cursor: pointer;
+      transition: .4s ease;
+      color: var(--green);
+      border:1px solid var(--green);
+    }
+  .four h2{
+    line-height: 1;
+  }
+  /*****************
+  five
+  *****************/
+  .five{
+    background-color: var(--brown);
+    color: var(--white);
+    margin: 0 auto;
+    text-align: center;
+    width: 80%;
+    padding: 30px 35px;
+  }
+
+  .photo25{
+    width: 25%;
+    float: left;
+    padding: 30px 15px;
+  }
+
+  img {
+    border: 1px solid #ddd;
+    display: block;
+    height: auto;
+    width: 100%;
+}
+
+  img:hover {
+    box-shadow: 0 0 2px 1px rgba(0, 140, 186, 0.5);
+  }
+
+  .five .container{
+    width: 100%;
+  }
+
+  /*****************
+  footer
+  *****************/
+
+  footer{
+    background-color: var(--green);
+    color: var(--white);
+    margin: 0 auto;
+    text-align: center;
+    width: 80%;
+    padding: 50px 0;
+  }
+
+  /*******************
+  R E S P O N S I V E
+  ********************/
+  @media(max-width: 768px){
+    .logo a, .logo p, menu{
+      float: none;
+  }
+    .logo {
+      text-align: center;
+      padding-bottom: 15px;
+    }
+    .menu {
+      float: none;
+    }
+    .menu a{
+      border: 1px solid var(--brown);
+      color: var(--brown);
+      width: 150px;
+      display: block;
+      margin: 0 auto;
+    }
+    .menu li{
+      float: none;
+      text-align: center;
+    }
+    .menu li:last-child {
+      margin-bottom: 10px;
+    }
+    .one{
+     height:210px;
+     background-position: 20% 50%;
+     margin: 0 auto;
+  }
+    .two{
+      padding:30px 30px;
+    }
+    .con25{
+      width: 100%;
+      padding: 25px;
+    }
+    .three .container{
+      padding: 30px 20px 5px 20px;
+    }
+    .photo25{
+      width: 100%;
+    }
+}
